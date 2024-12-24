@@ -6,3 +6,6 @@ backend.mounka.shop
 
 [frontend]
 frontend.mounka.shop
+
+[all:vars]
+ansible_password = DevOps321
