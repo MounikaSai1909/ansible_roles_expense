@@ -32,7 +32,7 @@
   #     dest: /app
   #     remote_src: yes
 
-  - name: run app_pre_requisites
+  - name: run app pre-requisites
     ansible.builtin.import_role:
       name: common
       tasks_from: app_pre_req 
