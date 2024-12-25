@@ -40,8 +40,8 @@
 
 
   - name: copy backend service
-    ansible.builtin.copy:
-      src: backend.service
+    ansible.builtin.template:
+      src: backend.service.j2
       dest: /etc/systemd/system/backend.service
 
 
@@ -54,7 +54,7 @@
 
   - name: import data into MYSQL
     community.mysql.mysql_db:
-      login_user: root
+      #login_user: root
       login_password: "{{ login_password }}"
       login_host: "{{ login_host }}"
       target: /app/schema/backend.sql
