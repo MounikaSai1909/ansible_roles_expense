@@ -7,7 +7,7 @@ keyed_groups:
   parent_group: ''
 
 filters:
-    tag:Name: "frontend*"
+    tag:Name: "backend*"
 
 compose:
     #This sets ansible_host variable to connect with the private IP address without changing it
